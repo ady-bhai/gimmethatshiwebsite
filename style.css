@@ -1,5 +1,5 @@
 body {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     background-color: #fdfdfd;
     color: #333;
     display: flex;
@@ -7,7 +7,6 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    padding: 20px;
 }
 
 .container {

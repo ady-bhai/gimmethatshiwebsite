@@ -1,67 +1,61 @@
-body {
-    font-family: monospace;
-    background-color: #f0f0f0;
-    color: #333;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-    padding: 0;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ady's World</title>
+    <style>
+        body {
+            font-family: monospace;
+            background-color: #f0f0f0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .typewriter {
+            border-right: 0.05em solid; /* Cursor animation */
+            white-space: nowrap; /* Prevent line breaks */
+            overflow: hidden; /* Hide text until typing */
+            animation: typing 3s steps(30) forwards,
+                       blinking 0.5s infinite; /* Blink animation */
+        }
 
-.container {
-    max-width: 600px;
-    padding: 20px;
-}
+        /* Typing animation */
+        @keyframes typing {
+            from { width: 0 }
+            to { width: 100% }
+        }
 
-h1 {
-    font-size: 1.8em;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-
-p {
-    margin-bottom: 15px;
-    line-height: 1.5;
-}
-
-a {
-    color: #007bff;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-code {
-    background: #f4f4f4;
-    padding: 2px 4px;
-    border-radius: 4px;
-    font-size: 0.9em;
-    color: #d14;
-}
-
-.container a + a {
-    margin-left: 15px;
-}
-
-.typewriter {
-    border-right: 0.05em solid; /* Cursor animation */
-    white-space: nowrap; /* Prevent line breaks */
-    overflow: hidden; /* Hide text until typing */
-    animation: typing 3s steps(30) forwards,
-               blinking 0.5s infinite; /* Blink animation */
-}
-
-/* Typing animation */
-@keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
-}
-
-/* Blinking cursor animation */
-@keyframes blinking {
-    50% { border-color: transparent; }
-}
+        /* Blinking cursor animation */
+        @keyframes blinking {
+            50% { border-color: transparent; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Aditya Mehta</h1>
+        <p>I'm Aditya, an undergraduate at <a href="https://www.berkeley.edu/">UC Berkeley</a>, studying Math, Finance, and Cognition. </p>
+        <p> Some questions I'm trying to answer are: how do I #typewriter script <span class="typewriter"></span></p>
+        <p> My interests are in 
+            1) making good decisions
+            2) building cool products
+            3) valuating financial instruments</p>
+        <p>Email: <code>echo 'YZhpcmFnQGtXd05rYXdzZlUYUBnbWFpbC5jb20=' | base64 --decode</code></p>
+        <p><a href="#">Projects</a> <a href="#">Github</a></p>
+    </div>
+</body>
+</html>

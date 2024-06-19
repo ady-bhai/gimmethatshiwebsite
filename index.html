@@ -25,6 +25,24 @@
         a:hover {
             text-decoration: underline;
         }
+        .typewriter {
+            border-right: 0.05em solid; /* Cursor animation */
+            white-space: nowrap; /* Prevent line breaks */
+            overflow: hidden; /* Hide text until typing */
+            animation: typing 3s steps(30) forwards,
+                       blinking 0.5s infinite; /* Blink animation */
+        }
+
+        /* Typing animation */
+        @keyframes typing {
+            from { width: 0 }
+            to { width: 100% }
+        }
+
+        /* Blinking cursor animation */
+        @keyframes blinking {
+            50% { border-color: transparent; }
+        }
     </style>
 </head>
 <body>

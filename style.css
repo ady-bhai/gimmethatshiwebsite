@@ -1,24 +1,37 @@
 body {
-    font-family: monospace;
+    font-family: 'Roboto', sans-serif;
     background-color: #f0f0f0;
+    color: #333;
     padding: 20px;
 }
 .container {
-    max-width: 600px;
+    max-width: 800px;
     margin: 0 auto;
     background-color: #ffffff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 3em;
+    color: #007bff;
+}
+p {
+    font-size: 1.2em;
+    line-height: 1.6;
 }
 a {
     color: #007bff;
     text-decoration: none;
+    margin: 0 10px;
 }
 a:hover {
     text-decoration: underline;
 }
 .typewriter {
+    display: inline-block;
     border-right: 0.05em solid; /* Cursor animation */
     white-space: nowrap; /* Prevent line breaks */
     overflow: hidden; /* Hide text until typing */
@@ -35,4 +48,18 @@ a:hover {
 /* Blinking cursor animation */
 @keyframes blinking {
     50% { border-color: transparent; }
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links a {
+    display: inline-block;
+    margin: 0 10px;
+    transition: transform 0.3s;
+}
+
+.social-links a:hover {
+    transform: scale(1.1);
 }
